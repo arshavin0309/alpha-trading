@@ -1,3 +1,78 @@
 @media (min-width: 1200px) {
-    
+    .header {
+        .menu {
+            &>.menu-item {
+                &>a {
+                    &:hover {
+                        color: var(--green);
+                    }
+                }
+            }
+        }
+
+        &.scrolled {
+            .header__logo {
+                cursor: pointer;
+
+                &:hover {
+                    path {
+                        fill: var(--green);
+                    }
+                }
+            }
+        }
+    }
+
+    .white-btn,
+    .green-btn {
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+
+    .main-analytics {
+        &__btn {
+            &:not(.swiper-slide-thumb-active) {
+                cursor: pointer;
+
+                &:hover {
+                    color: var(--green);
+                }
+            }
+        }
+    }
+
+    .footer {
+        .menu {
+            &>.menu-item {
+                &>a {
+                    &:hover {
+                        color: var(--green);
+                    }
+                }
+            }
+        }
+
+        &__docs {
+            a {
+                &:hover {
+                    color: var(--green);
+                }
+            }
+        }
+
+        &__contact {
+            &:not(.footer__address) {
+                &:hover {
+                    color: var(--green);
+
+                    svg {
+                        background: var(--green);
+                    }
+                }
+            }
+        }
+    }
 }
