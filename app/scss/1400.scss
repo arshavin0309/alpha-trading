@@ -1,3 +1,7 @@
 @media (max-width: 1400px) {
-    
+    .main-hero {
+        &__list {
+            gap: 24px;
+        }
+    }
 }

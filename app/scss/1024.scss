@@ -1,3 +1,7 @@
 @media (max-width: 1024px) {
-    
+    .main-types {
+        &__item {
+            width: 361px;
+        }
+    }
 }

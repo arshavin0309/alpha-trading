@@ -75,4 +75,22 @@
             }
         }
     }
+
+    .main-platform {
+        &__item {
+            &:has(.white-btn:hover) {
+                box-shadow: 0px 0px 100px -70px var(--green);
+            }
+        }
+    }
+
+    .main-types {
+        &__item {
+            transition: var(--transition);
+
+            &:has(.white-btn:hover) {
+                box-shadow: 0px 0px 100px -70px var(--green);
+            }
+        }
+    }
 }

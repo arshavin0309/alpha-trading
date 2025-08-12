@@ -1,3 +1,24 @@
 @media (max-width: 1500px) {
+    .main-platform {
+        &__list {
+            display: flex;
+            flex-direction: column;
+        }
 
+        &__item {
+            &.mt {
+                .main-platform__btns {
+                    max-width: 700px;
+                }
+            }
+        }
+
+        &__btns {
+            max-width: 700px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .white-btn {}
+        }
+    }
 }

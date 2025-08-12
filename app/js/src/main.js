@@ -1,10 +1,19 @@
 const mainTypesSwiper = new Swiper('.main-types__swiper', {
-    slidesPerView: 3,
+    slidesPerView: 1,
     spaceBetween: 20,
 
     pagination: {
         el: '.main-types__pagination',
     },
+
+    breakpoints: {
+        500: {
+            slidesPerView: 'auto',
+        },
+        1024: {
+            slidesPerView: 3,
+        }
+    }
 });
 
 const mainAnalyticsIcon = new Swiper('.main-analytics__icons', {

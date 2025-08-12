@@ -1,3 +1,37 @@
 @media (max-width: 700px) {
-    
+    .main-platform {
+        &__item {
+            &.wt {
+                background: var(--grey-card);
+
+                p {
+                    max-width: 100%;
+                }
+            }
+
+            &.dt {
+                background: var(--grey-card);
+
+                p {
+                    max-width: 100%;
+                }
+            }
+
+            &.mt {
+                background: var(--grey-card);
+
+                p {
+                    max-width: 100%;
+                }
+            }
+
+            &.tr {
+                background: var(--grey-card);
+
+                p {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
 }

@@ -13,4 +13,43 @@
             margin-right: -15px;
         }
     }
+
+    .green-btn,
+    .white-btn {
+        width: 100%;
+    }
+
+    .main-hero {
+        .green-btn {
+            width: auto;
+        }
+    }
+
+    .main-why {
+        &__image {
+            .green-btn {
+                width: 100%;
+            }
+        }
+    }
+
+    .main-platform {
+        &__item {
+            &.mt {
+                .main-platform__btns {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        &__btns {
+            max-width: 100%;
+        }
+    }
+
+    .main-types {
+        &__item {
+            width: 100%;
+        }
+    }
 }
