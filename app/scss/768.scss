@@ -3,6 +3,7 @@
         &__list {
             display: flex;
             flex-direction: column;
+            gap: 24px;
         }
 
         &__image {
@@ -14,11 +15,31 @@
         &__top {
             display: flex;
             flex-direction: column-reverse;
+            gap: 30px;
+            margin-bottom: 30px;
+
+            img {
+                width: 100%;
+                height: 340px;
+                object-fit: cover;
+                object-position: center top;
+            }
         }
 
         &__bottom {
             display: flex;
             flex-direction: column;
+            gap: 20px;
+
+            &>div {
+                &:nth-child(2) {
+                    padding: 0;
+                }
+
+                &:nth-child(3) {
+                    margin-top: 10px;
+                }
+            }
         }
 
         &__logo {
@@ -26,9 +47,42 @@
         }
     }
 
+    .main-types {
+        h2 {
+            &+p {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__box {
+            padding: 24px 16px;
+        }
+    }
+
+    .main-analytics {
+        &__container {
+            margin-left: -16px;
+            margin-right: -16px;
+            border-radius: 20px;
+        }
+
+        &__bottom {
+            margin-top: 80px;
+        }
+
+        &__icons {
+            margin-top: 30px;
+        }
+    }
+
     .main-platform {
         &__item {
+            min-height: 318px;
+            padding: 24px 16px;
+
             &.mt {
+                order: 1;
+
                 .main-platform__btns {
                     max-width: 320px;
                     display: flex;
@@ -37,10 +91,27 @@
             }
         }
 
+        h3 {
+            margin-bottom: 16px;
+        }
+
         &__btns {
             max-width: 320px;
             display: flex;
             flex-direction: column;
+        }
+    }
+
+    .footer {
+        &__container {
+            display: flex;
+            flex-direction: column;
+            padding: 24px 16px;
+        }
+
+        &__links {
+            max-width: 500px;
+            justify-content: space-between;
         }
     }
 }

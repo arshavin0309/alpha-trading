@@ -1,11 +1,49 @@
 @media (max-width: 1200px) {
     .header {
+        &__container {
+            padding: 10px;
+            backdrop-filter: initial;
+            background: rgb(67 65 65 / 97%);
+        }
+
+        &__logo {
+            width: 199px;
+            height: 60px;
+        }
+
         &__burger {
             display: block;
         }
 
         &__nav {
-            display: none;
+            position: fixed;
+            top: 120px;
+            right: -400px;
+            width: calc(100% - 16px - 16px);
+            max-width: 400px;
+            height: calc(100vh - 120px - 20px);
+            display: flex;
+            flex-direction: column;
+            background: rgb(67 65 65 / 97%);
+            border-radius: 10px;
+        }
+
+        .menu {
+            width: 100%;
+            align-items: start;
+            flex-direction: column;
+            gap: 0;
+
+            &>.menu-item {
+                width: 100%;
+                border-bottom: 1px solid var(--white);
+
+                &>a {
+                    display: block;
+                    padding: 20px;
+                    text-align: left;
+                }
+            }
         }
 
         .white-btn {
@@ -15,11 +53,32 @@
 
             &.mobile {
                 display: inline-block;
+                margin: 36px 16px 0;
+            }
+        }
+
+        &.active {
+            .header__nav {
+                right: 16px;
+            }
+        }
+
+        &.scrolled {
+            .header__nav {
+                top: 75px;
+                height: calc(100vh - 75px - 20px);
             }
         }
     }
 
     .main-hero {
+        &__list {
+            align-items: start;
+            flex-direction: column;
+        }
+    }
+
+    .error-hero {
         &__list {
             align-items: start;
             flex-direction: column;
@@ -32,6 +91,13 @@
     }
 
     .main-why {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
         &__list {
             grid-template-columns: 1fr 1fr;
         }
@@ -66,6 +132,13 @@
     }
 
     .main-about {
+        padding-top: 80px;
+        padding-bottom: 100px;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
         &__bottom {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -75,5 +148,118 @@
             grid-column: span 2;
             margin: auto;
         }
+    }
+
+    .main-platform {
+        margin-top: -20px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        border-radius: 20px 20px 0 0;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+    }
+
+    .main-analytics {
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        &__container {
+            padding: 80px 16px;
+        }
+
+        &__top {
+            h2 {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__btns {
+            max-width: calc(100% + 16px + 16px);
+            margin-left: -16px;
+            margin-right: -16px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        &__icons {
+            margin-left: -16px;
+            margin-right: -16px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        &__icon {
+            width: 235px;
+        }
+    }
+
+    .footer {
+        margin: 0;
+        padding-top: 80px;
+        border-radius: 0;
+
+        &__info {
+            gap: 20px;
+        }
+
+        &__contact {
+            font-size: 16px;
+        }
+
+        &__container {
+            gap: 30px;
+        }
+
+        &__links {
+            gap: 30px;
+        }
+
+        &__risk {
+            grid-column: span 2;
+        }
+
+        &__logo {
+            grid-column: span 2;
+            margin: auto;
+            max-width: 331px;
+            height: auto;
+        }
+    }
+
+    .main-banner {
+        padding-bottom: 80px;
+    }
+
+    .widget-box {
+        height: 500px;
+    }
+
+    .form-fixed {
+        &__container {
+            padding: 48px 16px 24px;
+            border-radius: 20px;
+        }
+
+        &__close {
+            top: 20px;
+            right: 20px;
+        }
+
+        h2 {
+            &+p {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    .main-hero,
+    .error-hero,
+    .main-about,
+    .main-analytics,
+    .main-analytics__container,
+    .footer {
+        background-attachment: scroll;
     }
 }

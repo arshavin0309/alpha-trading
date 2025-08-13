@@ -16,16 +16,17 @@
 
     .green-btn,
     .white-btn {
-        width: 100%;
-    }
-
-    .main-hero {
-        .green-btn {
-            width: auto;
+        &:not(.main-hero .green-btn, .header .white-btn, .error-hero .green-btn) {
+            width: 100%;
+            padding: 20px;
         }
     }
 
     .main-why {
+        h3 {
+            max-width: 338px;
+        }
+
         &__image {
             .green-btn {
                 width: 100%;
@@ -34,6 +35,10 @@
     }
 
     .main-platform {
+        h2 {
+            text-align: center;
+        }
+
         &__item {
             &.mt {
                 .main-platform__btns {
@@ -49,6 +54,17 @@
 
     .main-types {
         &__item {
+            width: 100%;
+        }
+    }
+
+    .footer {
+        &__links {
+            max-width: 100%;
+            flex-direction: column;
+        }
+
+        &__logo {
             width: 100%;
         }
     }
