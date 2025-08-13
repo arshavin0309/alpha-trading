@@ -3,7 +3,7 @@
         &__container {
             padding: 10px;
             backdrop-filter: initial;
-            background: rgb(67 65 65 / 97%);
+            background: var(--grey-card);
         }
 
         &__logo {
@@ -24,7 +24,7 @@
             height: calc(100vh - 120px - 20px);
             display: flex;
             flex-direction: column;
-            background: rgb(67 65 65 / 97%);
+            background: var(--grey-card);
             border-radius: 10px;
         }
 

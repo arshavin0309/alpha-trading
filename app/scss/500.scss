@@ -16,9 +16,27 @@
 
     .green-btn,
     .white-btn {
-        &:not(.main-hero .green-btn, .header .white-btn, .error-hero .green-btn) {
+        &:not(.header .white-btn) {
             width: 100%;
             padding: 20px;
+        }
+    }
+
+    .main-hero {
+        background: url(../images/main-hero-bg-mobile.avif) right top / cover no-repeat;
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    .error-hero {
+        h1 {
+            text-align: center;
+
+            &+p {
+                text-align: center;
+            }
         }
     }
 
