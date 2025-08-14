@@ -1021,6 +1021,21 @@ li {
     overflow: hidden;
 }
 
+.wpcf7-list-item {
+    margin: 0 !important;
+}
+
+.wpcf7-not-valid-tip {
+    margin: -10px 0 20px !important;
+}
+
+.wpcf7-response-output {
+    padding: 10px !important;
+    margin: 20px 0 0 !important;
+    border-radius: 10px !important;
+    color: var(--white) !important;
+}
+
 @import '../scss/hovers';
 @import '../scss/1800';
 @import '../scss/1700';
