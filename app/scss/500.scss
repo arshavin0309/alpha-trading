@@ -16,7 +16,7 @@
 
     .green-btn,
     .white-btn {
-        &:not(.header .white-btn) {
+        &:not(.header .white-btn, .main-why__btn) {
             width: 100%;
             padding: 20px;
         }
@@ -48,6 +48,8 @@
         &__image {
             .green-btn {
                 width: 100%;
+                padding: 20px 5px;
+                white-space: initial;
             }
         }
     }

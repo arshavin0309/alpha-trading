@@ -93,4 +93,14 @@
             }
         }
     }
+
+    .form-fixed {
+        &__close {
+            &:hover {
+                path {
+                    fill: var(--green);
+                }
+            }
+        }
+    }
 }

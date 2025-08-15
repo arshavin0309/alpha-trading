@@ -5,6 +5,8 @@ let closeForm = document.querySelector('.form-fixed__close'); // кнопка з
 let upBtn = document.querySelector('.upButton'); // кнопка наверх
 let body = document.body;
 let html = document.documentElement;
+let mainTypesBtns = document.querySelectorAll('.main-types__btn');
+let mainWhyBtn = document.querySelector('.main-why__btn');
 
 // Открытие
 if (showFormBtn && formFixed) {
@@ -15,6 +17,28 @@ if (showFormBtn && formFixed) {
         html.classList.add('no-scroll'); // блокируем скролл страницы
         upBtn.classList.remove('show'); // скрываем кнопку
     });
+
+    if (mainTypesBtns) {
+        mainTypesBtns.forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                formFixed.classList.add('active');
+                body.classList.add('no-scroll'); // блокируем скролл страницы
+                html.classList.add('no-scroll'); // блокируем скролл страницы
+                upBtn.classList.remove('show'); // скрываем кнопку
+            });
+        });
+    }
+
+    if (mainWhyBtn) {
+        mainWhyBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            formFixed.classList.add('active');
+            body.classList.add('no-scroll'); // блокируем скролл страницы
+            html.classList.add('no-scroll'); // блокируем скролл страницы
+            upBtn.classList.remove('show'); // скрываем кнопку
+        });
+    }
 }
 
 // Закрытие
